@@ -1,12 +1,12 @@
 # DroneRepository
--to build App run mvc clean install 
--to run  run app mvn spring-boot:run
--to run junit test run  mvn test
--im memory DB url is http://localhost:8080/h2-console , username 'sa' password empty
--periodic task runs every 1 min
--There are 5 Rest APIs :
+#to build App run mvc clean install 
+#to run  run app mvn spring-boot:run
+#to run junit test run  mvn test
+#im memory DB url is http://localhost:8080/h2-console , username 'sa' password empty
+#periodic task runs every 1 min
+#There are 5 Rest APIs :
 
-1-registering a drone API:
+#1-registering a drone API:
 --------------------------
 URL:  http://localhost:8080/drone/register
 METHOD: POST 
@@ -35,7 +35,7 @@ REQUEST BODY:
 }
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-2- loading a drone with medication items API
+#2- loading a drone with medication items API
 ------------------------------------------------
 
 URL:  http://localhost:8080/drone/loadDronesWithMedications
@@ -44,7 +44,7 @@ METHOD: GET
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
-3- checking loaded medication items for a given drone API:
+#3- checking loaded medication items for a given drone API:
 ----------------------------------------------------------
 URL:  http://localhost:8080/drone/getMedicationByDroneSerialNumber/{serialnumber}
 METHOD: GET
@@ -54,7 +54,7 @@ PATH PARAM: drone serialnumber
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
-4- checking available drones for loading API
+#4- checking available drones for loading API
 ------------------------------------------------
 URL:  http://localhost:8080/drone/getDroneWithLoadingState
 METHOD: GET
@@ -62,7 +62,7 @@ METHOD: GET
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
-5- check drone battery level for a given drone API
+#5- check drone battery level for a given drone API
 ----------------------------------------------------
 URL:   http://localhost:8080/drone/getBatteryCapacityByDroneSerialNumber/{serialnumber}
 METHOD: GET
